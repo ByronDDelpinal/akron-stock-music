@@ -1,0 +1,122 @@
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.site-header {
+  align-items: center;
+  background: $color-dark;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: $spacing-small calc((100vw - #{$max-page-width}) / 2);
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 700px) {
+    flex-wrap: nowrap;
+    padding: $spacing-medium calc((100vw - #{$max-page-width}) / 2);
+    justify-content: space-between;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * #{$header-border-width});
+    left: calc(-1 * #{$header-border-width});
+    height: calc(100% + #{$header-border-width} * 2);
+    width: calc(100% + #{$header-border-width});
+    background: $gradient-border;
+    z-index: -1;
+    animation: animatedgradient 4s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+  & nav {
+    flex-basis: 100%;
+    margin: 0 $spacing-medium;
+
+    & ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+
+      & a {
+        font-size: 0.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-light;
+        line-height: 42px;
+        letter-spacing: 0.7px;
+        position: relative;
+        text-decoration: none;
+
+        &:hover,
+        &.selected {
+          &::after {
+            background-color: $color-highlight;
+            bottom: -7px;
+            content: '';
+            height: 3px;
+            left: -1px;
+            position: absolute;
+            width: 100%;
+          }
+        }
+
+        @media (min-width: 450px) {
+          font-size: 0.75rem;
+        }
+
+        @media (min-width: 450px) {
+          font-size: 1rem;
+        }
+      }
+
+      & li {
+        padding: 0 18px;
+        display: inline-block;
+        position: relative;
+
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+
+    @media (min-width: 700px) {
+      flex-basis: 100%;
+    }
+  }
+
+  & .brand-logo {
+    display: none;
+    margin-left: $spacing-medium;
+    width: 100px;
+
+    &:hover img {
+      transform: scaleX(-1);
+      transition: .2s;
+    }
+
+    @media (min-width: 700px) {
+      display: block;
+    }
+  }
+
+  & .home {
+    @media (min-width: 700px) {
+      display: none;
+    }
+  }
+}

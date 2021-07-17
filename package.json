@@ -1,0 +1,58 @@
+{
+  "name": "akron-stock-music",
+  "description": "A place for non-profits to configure stock music made by artists from Akron, OH.",
+  "version": "1.0.0",
+  "author": "Byron Delpinal <byronddelpinal@gmail.com>",
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "fontsource-bangers": "^3.1.5",
+    "fontsource-pt-sans-narrow": "^3.1.5",
+    "gatsby": "^2.32.13",
+    "gatsby-background-image": "^1.4.0",
+    "gatsby-cli": "^2.10.13",
+    "gatsby-image": "^2.2.45",
+    "gatsby-plugin-create-client-paths": "^2.1.24",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-google-analytics": "^2.1.38",
+    "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-sass": "^2.3.14",
+    "gatsby-plugin-sharp": "^2.6.14",
+    "gatsby-plugin-sitemap": "^2.11.0",
+    "gatsby-source-contentful": "^4.6.0-next.0",
+    "gatsby-source-filesystem": "^2.1.57",
+    "gatsby-transformer-remark": "^2.6.59",
+    "gatsby-transformer-sharp": "^2.3.19",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.0",
+    "react-share": "^4.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Should probs do this...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByronDDelpinal/personal-website"
+  },
+  "stylelint": {
+    "rules": {
+      "selector-max-class": 2
+    }
+  }
+}

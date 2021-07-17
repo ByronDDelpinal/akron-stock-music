@@ -1,0 +1,186 @@
+@import './_variables.scss';
+@import './_reset.scss';
+@import './_typography.scss';
+
+/******** PAGES ********/
+@import './pages/about.scss';
+@import './pages/contact.scss';
+
+/******** COMPONENTS ********/
+@import './button.scss';
+@import './footer.scss';
+@import './genre-selection.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './contact';
+
+@import './music.scss';
+
+/******** TEMPLATES ********/
+
+body {
+  background-color: #fafdff !important;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+a:focus,
+a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:active,
+:focus {
+  outline: none !important;
+}
+
+.main-content {
+  flex-grow: 2;
+  margin-top: $header-border-width;
+
+  &.no-header {
+    margin-top: 0;
+  }
+}
+
+section {
+  margin: 0;
+  padding: $spacing-medium;
+  position: relative;
+
+  @media (min-width: $max-page-width) {
+    padding: $spacing-medium calc((100vw - #{$max-page-width}) / 2);
+  }
+
+  &.dark {
+    background-color: $color-dark;
+    color: $color-light;
+
+    & a {
+      color: $color-highlight;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+
+    & .button:hover {
+      color: $color-light !important;
+    }
+  }
+}
+
+h2.section-title {
+  font-size: 36px;
+  padding-top: $spacing-large;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2.section-title:after {
+  display: block;
+  content: ' ';
+  background: $color-primary;
+  height: 2px;
+  width: 50px;
+  margin: 20px auto 0 auto;
+}
+
+.small-paragraph {
+  font-size: $fontsize-small;
+  margin: $spacing-small auto;
+  max-width: $max-page-width;
+  padding: 0 $spacing-medium;
+
+  @media (min-width: 700px) {
+    padding: 0;
+  }
+}
+
+.photo-credit {
+  color: gray;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+  width: 100%;
+}
+
+.photo-credit a {
+  color: $color-highlight;
+}
+
+/** Business Preview **/
+.entry-content-bottom {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.entry-content-bottom .icon {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.entry-content-bottom > .post-social {
+  flex-wrap: nowrap;
+  margin-bottom: 0;
+  width: initial;
+}
+
+.entry-content-bottom > .post-social > button {
+  margin: 0 5px 0 0;
+}
+/*/ Business Preview /*/
+
+/******** Business Single ********/
+
+/** Page Header **/
+.post-content.top-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .post-content.top-content {
+    flex-wrap: wrap;
+  }
+}
+
+.post-content.top-content img {
+  margin-right: 6px;
+  width: 50px;
+}
+/*/ Page Header /*/
+
+.contact-page .main-content {
+  background-color: $color-dark;
+}
+
+/* TODO - The way the handle button CSS is duplicated a lot */
+/* TODO - Colors are still hex and duplicated everywhere */

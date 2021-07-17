@@ -1,0 +1,91 @@
+body {
+  font-family: "PT Sans Narrow",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  color: $color-dark; //color variable set elsewhere
+  -webkit-text-size-adjust: 100%; //fix for iOS
+}
+
+h1,
+h2 {
+  font-family: 'Bangers',Helvetica,Arial,sans-serif;
+  font-weight: 700 !important;
+  letter-spacing: 4px;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "PT Sans Narrow",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: $fontsize-large;
+
+  @media (min-width: 600px) {
+    font-size: $fontsize-xlarge;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: $fontsize-xxlarge;
+  }
+}
+
+h2 {
+  font-size: $fontsize-medium;
+
+  @media (min-width: 600px) {
+    font-size: $fontsize-large;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: $fontsize-xlarge;
+  }
+}
+
+h3 {
+  font-size: $fontsize-small;
+
+  @media (min-width: 600px) {
+    font-size: $fontsize-medium;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: $fontsize-large;
+  }
+}
+
+h5 {
+  font-size: $fontsize-medium;
+}
+
+li, p {
+  font-size: $fontsize-xsmall;
+  line-height: 1.4;
+
+  @media (min-width: 600px) {
+    font-size: $fontsize-small;
+  }
+}
+
+p {
+  margin: $spacing-small 0 $spacing-medium 0;
+}
+
+.blog-preview--title a {
+  font-family: 'PT Sans Narrow',Helvetica,Arial,sans-serif;
+  font-size: $fontsize-medium;
+
+  @media (min-width: 700px) {
+    font-size: $fontsize-small;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: $fontsize-medium;
+  }
+}
+
+.button {
+  font-family: 'PT Sans Narrow',Helvetica,Arial,sans-serif;
+}

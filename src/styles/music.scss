@@ -1,0 +1,86 @@
+.audio-arrangement {
+    & .audio {
+        border: 1px solid $color-gray;
+        height: 5rem;
+        margin: 1rem;
+
+        &.drag-over {
+            border-style: dashed;
+        }
+    }
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+}
+
+.audio-control {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    border-radius: 2px;
+    color: $color-primary;
+    cursor: pointer;
+    padding: 0.25rem;
+    position: relative;
+
+    &:hover {
+        background-color: $color-primary;
+        color: white;
+    }
+}
+
+.audio-selection {
+    background-color: $color-gray;
+}
+
+.audio-list {
+    align-items: center;
+    display: flex;
+    justify-content: middle;
+    min-height: 5rem;
+}
+
+#audio-options-box {
+    & .delete-button {
+        display: none;
+    }
+}
+
+#audio-selection-box.playing {
+    .audio-option {
+        background-color: $color-gray;
+
+        &.playing {
+            background-color: $color-primary;
+        }
+    }
+
+    & .delete-button {
+        display: none;
+    }
+}
+
+.audio-option {
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+
+    & .delete-button {
+        appearance: none;
+        background-color: white;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+        color: $color-primary;
+        cursor: pointer;
+        position: absolute;
+        right: -5px;
+        top: -5px;
+    }
+}

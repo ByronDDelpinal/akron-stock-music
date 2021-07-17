@@ -1,0 +1,51 @@
+.hero {
+  align-content: center;
+  background-image: $gradient-hero;
+  color: $color-light;
+  display: flex;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  position: relative;
+
+  &--header {
+    flex-basis: 100%;
+    text-align: center;
+    text-shadow: 1px 2px 0px $color-dark;
+
+    @media (min-width: 600px) {
+      text-shadow: 2px 3px 0px $color-dark;
+    }
+  }
+
+  &--right {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  &--sub-header {
+    flex-basis: 100%;
+    line-height: 1.4;
+    margin-top: $spacing-small;
+    text-align: center;
+    text-shadow: 1px 2px 0px $color-dark;
+    z-index: 1;
+
+    @media (min-width: 800px) {
+      &--sub-header {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 600px) {
+      text-shadow: 2px 3px 0px $color-dark;
+    }
+  }
+
+  & .site-header {
+    background-color: transparent;
+    border-width: 0;
+    position: absolute;
+    top: 0;
+  }
+}

@@ -1,0 +1,106 @@
+.and-owns-a-suit-page {
+  & .block-list--block {
+    margin-top: $spacing-medium;
+
+    h3 {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    & .title {
+      line-height: 1.2;
+    }
+
+    & .year {
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0 0 $spacing-small 0;
+    }
+  }
+
+  & .hero {
+    height: 18rem;
+
+    & [aria-label='envelope'] {
+      margin-right: 5px;
+    }
+
+    &--sub-header {
+      margin-bottom: 0 !important;
+    }
+
+    @media (min-width: 700px) {
+      height: 25rem;
+    }
+  }
+
+  & .professional-writing {
+    & .top-content--header {
+      color: $color-light;
+    }
+  }
+
+  & .resume-link {
+    box-sizing: border-box;
+    display: block;
+    margin: $spacing-large 0;
+    width: 100%;
+  }
+
+  & .top-content {
+    padding: 0;
+
+    &--header {
+      border-bottom: 3px dashed $color-secondary;
+      color: $color-dark;
+      flex-basis: 100%;
+      margin-bottom: $spacing-medium;
+      margin-top: $spacing-large;
+      max-width: $max-page-width;
+    }
+  }
+
+  & .category-list {
+    align-items: center;
+    display: inline-block;
+    margin-left: $spacing-small;
+
+    & li {
+      color: $color-light;
+      display: inline-block;
+      font-size: 1rem;
+      margin-left: $spacing-small;
+      padding: 0 $spacing-small;
+
+      &.community {
+        background-color: $color-secondary;
+      }
+
+      &.work {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  & .current-status {
+    &--block:last-child {
+      text-align: right;
+    }
+
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $spacing-small;
+    }
+  }
+
+  & .thrive-list {
+    margin: $spacing-xsmall 0 0 $spacing-medium;
+
+    & li {
+      list-style-type: square;
+    }
+  }
+}

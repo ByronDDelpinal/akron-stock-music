@@ -1,0 +1,86 @@
+.contact-us {
+  background-color: $color-dark;
+  padding: $spacing-medium;
+  margin: 0 auto;
+  max-width: $max-page-width;
+
+  & .wrap-contact {
+    background: #fafdfe;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: $spacing-medium;
+    box-shadow: 3px 3px 5px #7f7f7f85;
+
+    & .success-msg {
+      flex-basis: 100%;
+      padding: 0 0 $spacing-medium 0;
+      text-align: center;
+    }
+  }
+
+  & .contact-form {
+    display: inline-block;
+    min-width: 80%;
+
+    & h5 {
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    & .actions {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    & .field {
+      margin: 10px 0px;
+      z-index: 1;
+      position: relative;
+
+      & input,
+      & textarea {
+        display: block;
+        width: 100%;
+        background: #e6e6e6;
+        font-family: "PT Sans Narrow",Helvetica,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #666666;
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 10px 0 10px;
+        border: 0;
+      }
+
+      & label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-family: "PT Sans Narrow",Helvetica,Arial,sans-serif;
+      }
+
+      & textarea {
+        height: 120px;
+        padding-top: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    padding: $spacing-xlarge;
+  }
+}

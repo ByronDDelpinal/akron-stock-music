@@ -1,0 +1,50 @@
+.aboutpage {
+  &--header {
+    border-bottom: 3px dashed $color-secondary;
+    color: $color-dark;
+    flex-basis: 100%;
+    font-size: $fontsize-large;
+    margin-bottom: $spacing-medium;
+    padding-bottom: 5px;
+  }
+
+  &--main-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 300px;
+  }
+
+  &--top-info {
+    margin: 0;
+
+    & .pointer-up {
+      @media (min-width: 700px) {
+        display: none;
+      }
+    }
+
+    & .pointer-left {
+      display: none;
+
+      @media (min-width: 700px) {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 700px) {
+      margin: 0 $spacing-large;
+    }
+  }
+
+  &--top-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 700px) {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+  }
+}

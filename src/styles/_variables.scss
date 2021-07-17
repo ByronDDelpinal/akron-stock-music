@@ -1,0 +1,38 @@
+/******** COLORS ********/
+$color-dark: #1D1F20;
+$color-gray: darkgray;
+$color-primary: #00809E;
+$color-secondary: #008080;
+$color-highlight: #A263A1;
+$color-light: white;
+$gradient-border: linear-gradient(60deg,#008080, #00809E, #2C7CB2, #7072B4, #A263A1);
+$gradient-button-webkit: -webkit-gradient(linear, left bottom, right top, from($color-primary), to($color-secondary));
+$gradient-button-opera: -o-linear-gradient(left bottom, $color-primary, $color-secondary);
+$gradient-button: linear-gradient(to right top, $color-primary, $color-secondary);
+$gradient-button-hover: linear-gradient(to right top, $color-secondary, $color-primary);
+$gradient-hero: linear-gradient(to right top, #008080, #00809E, #2C7CB2, #7072B4, #A263A1);
+
+/******** TYPOGRAPHY ********/
+$fontsize-xsmall: 16px;
+$fontsize-small: 20px;
+$fontsize-medium: 30px;
+$fontsize-large: 40px;
+$fontsize-xlarge: 50px;
+$fontsize-xxlarge: 60px;
+
+/******** SITEWIDE HEADER ********/
+$header-border-width: 1rem;
+
+/******** SITEWIDE FOOTER ********/
+$footer-height: 6rem;
+
+/******** SPACING ********/
+$spacing-xsmall: 0.25rem;
+$spacing-small: 0.5rem;
+$spacing-medium: 1.5rem;
+$spacing-large: 2.5rem;
+$spacing-xlarge: 5rem;
+
+/******** MISC ********/
+$max-blog-width: 700px;
+$max-page-width: 1000px;
